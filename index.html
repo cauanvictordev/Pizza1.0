@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3r1rZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ@KaoGN26/zrn20ImR1DfuLWn007aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Dev Burguer - A melhor hamburgueria dev!</title>
+</head>
+
+<body>
+
+
+
+ 
+
+
+<!-- HEADER -->
+<header class="header">
+    <div class="header-overlay">
+        <h1 class="title">Dev Burguer - O melhor sabor para sua fome!</h1>
+        <span class="subtitle">Venha nos visitar na Rua Dev 10, Campo Grande - MS</span>
+        <div class="opening-hours">Seg a Dom - 18:00 às 22:00</div>
+    </div>
+</header>
+
+
+
+
+    <!-- CARROSSEL -->
+    <div class="carousel">
+        <button class="carousel-btn prev-btn">&#10094;</button>
+        <div class="carousel-images">
+            <img src="carrosel1.jpg" alt="Pizza 1" class="carousel-image">
+            <img src="carrosel2.jpg" alt="Pizza 2" class="carousel-image">
+        </div>
+        <button class="carousel-btn next-btn">&#10095;</button>
+    </div>
+
+    <!-- NAVEGAÇÃO -->
+<nav class="navigation">
+    <ul class="nav-links">
+        <li><a href="#pizzas"><i class="fas fa-pizza-slice"></i> Pizzas</a></li>
+        <li><a href="#bebidas"><i class="fas fa-coffee"></i> Bebidas</a></li>
+        <li><a href="#hamburgueres"><i class="fas fa-hamburger"></i> Hambúrgueres</a></li>
+        <li><a href="#doces"><i class="fas fa-ice-cream"></i> Doces</a></li>
+    </ul>
+</nav>
+<!-- FIM NAVEGAÇÃO -->
+
+<!-- MENU -->
+<main class="menu">
+    <h2 class="menu-title">Conheça nosso menu</h2>
+
+    <!-- PIZZAS -->
+    <h3 id="pizzas">Pizzas</h3>
+    <div class="menu-grid">
+        <section class="menu-item">
+            <i class="fas fa-pizza-slice menu-icon"></i>
+            <div class="menu-details">
+                <p class="menu-name">Pizza Pepperoni</p>
+                <p class="menu-description">Mussarela, pepperoni e orégano.</p>
+                <div class="menu-actions">
+                    <p class="menu-price">R$ 40,90</p>
+                    <button class="add-to-cart-btn" data-name="Pizza Pepperoni" data-price="40.90">
+                        <img src="Pizza Pepperoni.png" alt="pizza">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="menu-item">
+            <i class="fas fa-pizza-slice menu-icon"></i>
+            <div class="menu-details">
+                <p class="menu-name">Pizza Portuguesa</p>
+                <p class="menu-description">Presunto, ovo, cebola e azeitonas.</p>
+                <div class="menu-actions">
+                    <p class="menu-price">R$ 42,50</p>
+                    <button class="add-to-cart-btn" data-name="Pizza Portuguesa" data-price="42.50">
+                        <img src="Pizza Portuguesa.png" alt="pizza">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="menu-item">
+            <i class="fas fa-pizza-slice menu-icon"></i>
+            <div class="menu-details">
+                <p class="menu-name">Pizza Margherita</p>
+                <p class="menu-description">Molho de tomate, mussarela e manjericão.</p>
+                <div class="menu-actions">
+                    <p class="menu-price">R$ 39,00</p>
+                    <button class="add-to-cart-btn" data-name="Pizza Margherita" data-price="39.00">
+                        <img src="Pizza Margherita.png" alt="pizza">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- BEBIDAS -->
+    <h3 id="bebidas">Bebidas</h3>
+    <div class="menu-grid">
+        <section class="menu-item">
+            <i class="fas fa-coffee menu-icon"></i>
+            <div class="menu-details">
+                <p class="menu-name">Coca-Cola 350ml</p>
+                <p class="menu-description">Bebida gelada e refrescante.</p>
+                <div class="menu-actions">
+                    <p class="menu-price">R$ 5,00</p>
+                    <button class="add-to-cart-btn" data-name="Coca-Cola 350ml" data-price="5.00">
+                        <img src="Coca-Cola 350ml.png" alt="bebidas">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="menu-item">
+            <i class="fas fa-coffee menu-icon"></i>
+            <div class="menu-details">
+                <p class="menu-name">Suco de Laranja</p>
+                <p class="menu-description">Natural e fresco.</p>
+                <div class="menu-actions">
+                    <p class="menu-price">R$ 6,50</p>
+                    <button class="add-to-cart-btn" data-name="Suco de Laranja" data-price="6.50">
+                        <img src="Suco de Laranja.png" alt="bebidas">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="menu-item">
+            <i class="fas fa-coffee menu-icon"></i>
+            <div class="menu-details">
+                <p class="menu-name">Chá Gelado</p>
+                <p class="menu-description">Refrescante com limão.</p>
+                <div class="menu-actions">
+                    <p class="menu-price">R$ 4,50</p>
+                    <button class="add-to-cart-btn" data-name="Chá Gelado" data-price="4.50">
+                        <img src="Chá Gelado.png" alt="bebidas">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- HAMBÚRGUERES -->
+    <h3 id="hamburgueres">Hambúrgueres</h3>
+    <div class="menu-grid">
+        <section class="menu-item">
+            <i class="fas fa-hamburger menu-icon"></i>
+            <div class="menu-details">
+                <p class="menu-name">Cheeseburger</p>
+                <p class="menu-description">Hambúrguer com queijo e molho especial.</p>
+                <div class="menu-actions">
+                    <p class="menu-price">R$ 25,00</p>
+                    <button class="add-to-cart-btn" data-name="Cheeseburger" data-price="25.00">
+                        <img src="Hambúrguer com queijo.png" alt="Hambúrgueres">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="menu-item">
+            <i class="fas fa-hamburger menu-icon"></i>
+            <div class="menu-details">
+                <p class="menu-name">Bacon Burger</p>
+                <p class="menu-description">Hambúrguer com bacon crocante.</p>
+                <div class="menu-actions">
+                    <p class="menu-price">R$ 28,00</p>
+                    <button class="add-to-cart-btn" data-name="Bacon Burger" data-price="28.00">
+                        <img src="Bacon Burger.png" alt="Hambúrgueres">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="menu-item">
+            <i class="fas fa-hamburger menu-icon"></i>
+            <div class="menu-details">
+                <p class="menu-name">Veggie Burger</p>
+                <p class="menu-description">Hambúrguer vegetariano com legumes frescos.</p>
+                <div class="menu-actions">
+                    <p class="menu-price">R$ 22,00</p>
+                    <button class="add-to-cart-btn" data-name="Veggie Burger" data-price="22.00">
+                        <img src="Hambúrguer vegetariano.png" alt="Hambúrgueres">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- DOCES -->
+    <h3 id="doces">Doces</h3>
+    <div class="menu-grid">
+        <section class="menu-item">
+            <i class="fas fa-ice-cream menu-icon"></i>
+            <div class="menu-details">
+                <p class="menu-name">Pudim</p>
+                <p class="menu-description">Sobremesa tradicional brasileira.</p>
+                <div class="menu-actions">
+                    <p class="menu-price">R$ 12,00</p>
+                    <button class="add-to-cart-btn" data-name="Pudim" data-price="12.00">
+                        <img src="Sobremesa tradicional.png" alt="Sobremesa">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="menu-item">
+            <i class="fas fa-ice-cream menu-icon"></i>
+            <div class="menu-details">
+                <p class="menu-name">Torta de Limão</p>
+                <p class="menu-description">Doce com toque cítrico de limão.</p>
+                <div class="menu-actions">
+                    <p class="menu-price">R$ 15,00</p>
+                    <button class="add-to-cart-btn" data-name="Torta de Limão" data-price="15.00">
+                        <img src="Torta de Limão.png" alt="Sobremesa">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<!-- FIM MENU -->
+
+
+   <!-- MODAL CARRINHO -->
+<div id="cart-modal" class="modal hidden">
+    <div class="modal-content">
+        <h2>Meu Carrinho</h2>
+        <div id="cart-items"></div>
+        <p>Total: <span id="cart-total">R$ 0,00</span></p>
+        
+          <!-- Nome e Endereço -->
+          <input type="text" id="customer-name" placeholder="Digite seu nome completo..." required />
+          <input type="text" id="address" placeholder="Digite seu endereço completo..." required />
+  
+
+        <!-- Forma de Pagamento -->
+        <div id="payment-section">
+            <h3>Forma de Pagamento</h3>
+            <div class="payment-options">
+                <label>
+                    <input type="radio" name="payment" value="Cartão" checked>
+                    Cartão 
+                </label>
+                <label>
+                    <input type="radio" name="payment" value="pix">
+                    Pix
+                </label>
+                <label>
+                    <input type="radio" name="payment" value="dinheiro">
+                    Dinheiro
+                </label>
+            </div>
+        </div>
+
+        <!-- Informação de Pagamento -->
+<div id="payment-info" class="hidden"></div>
+
+
+
+
+<!-- Informação do Pix -->
+<div id="pix-info" class="hidden">
+    <p>Chave Pix: <strong id="pix-key">75983178582</strong></p>
+    <button id="copy-pix-btn">Copiar Chave Pix</button>
+    <p>Lembre-se de enviá-lo manualmente após abrir o WhatsApp.</p>
+</div>
+
+
+
+
+        <!-- Botões de Ações -->
+        <div class="modal-actions">
+            <button id="close-modal-btn">Fechar</button>
+            <button id="checkout-btn">Finalizar Pedido</button>
+        </div>
+    </div>
+</div>
+
+
+  
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <button id="cart-btn">
+            (<span id="cart-count">0</span>) Ver Meu Carrinho
+            <i class="fa fa-cart-plus"></i>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
